@@ -108,7 +108,7 @@ void loop() {
   // Causes the new updates in BLE
   if (smokeLevel > 600) {
     newStatus = "DANGER: SMOKE!";
-  } else if (temp > 75) {
+  } else if (temp > 45) {
     newStatus = "ALERT: HIGH TEMP";
   }
 
@@ -148,7 +148,7 @@ void loop() {
   OLED.fillRect(70, 100, 60, 15, BLACK);
   OLED.setCursor(70, 100);
   OLED.setTextSize(1);
-  if (temp > 75) {OLED.setTextColor(RED); OLED.print(temp,1);}
+  if (temp > 45) {OLED.setTextColor(RED); OLED.print(temp,1);}
   else {OLED.setTextColor(GREEN); OLED.print(temp,1);}
   
   // Uploads the metrics to ThingSpeak
