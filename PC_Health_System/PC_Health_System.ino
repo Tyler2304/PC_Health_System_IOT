@@ -6,8 +6,8 @@
 #include <DHT.h> 
 #include <ArduinoBLE.h> 
 
-const char* ssid = "BT-X6CM6W";        
-const char* pass = "EpN6Ar9cpXaDvc";   
+const char* ssid = "wifi_user";        
+const char* pass = "wifi_pass";   
 unsigned long myChannelNumber = 3229297;    
 const char * myWriteAPIKey = "R9AZNFQZOXNYUT9P";   
 
